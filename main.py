@@ -10,6 +10,19 @@ def encoder(val):
             s += str(int(i) + 3)
     return s
 
+def decode(data):
+    decoded_data = ''
+
+    for char in data:
+
+        num = int(char)
+        if num < 3: num += 10
+        num -= 3
+
+        decoded_data += str(num)
+
+    return decoded_data
+
 if __name__ == "__main__":
     # Create main menu
     currentValue = None
