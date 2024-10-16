@@ -39,7 +39,7 @@ if __name__ == "__main__":
                     currentValue = encoder(input("Please enter your password to encode: "))
                     print("Your password has been encoded and stored!")
                 case 2:
-                    print("Section 2")
+                    print(f"The encoded password is {currentValue}, and the original password is {decode(currentValue)}")
                 case 3:
                     exit()
                 case _:
